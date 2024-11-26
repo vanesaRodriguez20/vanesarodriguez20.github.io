@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Coeficientes de Fricción</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>El Eco Silencioso del Deslizamiento</h1>
+        </div>
+
+        <div class="teoria">
+            <h2>¿Qué es la  Fricción ?</h2>
+            <p>La fricción es una fuerza de resistencia que surge cuando dos superficies están en contacto y se mueven o tienden a moverse una contra la otra. Es un fenómeno fundamental en la física que desempeña un papel crucial en numerosos procesos naturales y aplicaciones tecnológicas.</p>
+            <h4>Naturaleza Física de la Fricción</h4>
+            <p>A nivel microscópico, la fricción resulta de las interacciones entre las irregularidades superficiales (asperezas) de los materiales en contacto. Estas microirregularidades generan puntos de adhesión molecular que resisten el movimiento relativo.</p>
+            <img src="Trabajo_de_rozamiento.gif" alt="Trabajo de Rozamiento" width="400" height="180">
+            <img src="imagenDiagrama.png" alt="Trabajo de Rozamiento" width="400" height="180">
+           
+            <h3>Materiales y Contextos donde se Presenta la Fricción</h3>
+            <h4>Tipos de Materiales con Comportamiento Friccional</h4>
+            <div class="materiales-container">
+                <ul class="tipos-materiales">
+                    <li>
+                        <strong>Metales:</strong>
+                        <p>Presentan fricción en máquinas, articulaciones mecánicas y sistemas de transmisión. La fricción varía según el tipo de metal y tratamiento superficial.</p>
+                    </li>
+                    <li>
+                        <strong>Polímeros y Plásticos:</strong>
+                        <p>Utilizados en engranajes, cojinetes y sistemas de deslizamiento donde se requiere bajo coeficiente de fricción.</p>
+                    </li>
+                    <li>
+                        <strong>Materiales Compuestos:</strong>
+                        <p>Como frenos, embragues y superficies de contacto donde se aprovecha la fricción para control de movimiento.</p>
+                    </li>
+                    <li>
+                        <strong>Materiales Naturales:</strong>
+                        <p>Madera, caucho, cuero - presentan comportamientos friccionales únicos en diferentes aplicaciones.</p>
+                    </li>
+                </ul>
+            
+                <table class="factores-friccion">
+                    <thead>
+                        <tr>
+            </div>
+            <h3>Coeficiente de fricción</h3>
+            <p>El coeficiente de fricción (μ) es un número que indica cuánta resistencia al movimiento existe entre dos superficies que están en contacto. Este valor no tiene unidades y depende de las propiedades de los materiales y de cómo son sus superficies. Si las superficies son rugosas o suaves, o si los materiales tienen diferentes características, el coeficiente de fricción cambiará. Un valor más alto significa mayor resistencia al movimiento, mientras que un valor bajo indica menos resistencia.</p>
+            <p>El coeficiente de fricción estático (o de arranque) está relacionado con la fuerza necesaria para iniciar el movimiento de deslizamiento. Por lo general, ésta es la fuerza máxima de la prueba. El coeficiente de fricción cinética (o deslizamiento) es la fuerza media medida durante el movimiento</p>
+            <p>El coeficiente de fricción dinámico (µk) se utiliza cuando el objeto se mueve a lo largo de la superficie. Se determina la fuerza requerida para mantener el cuerpo en movimiento sobre la superficie, a una velocidad constante.</p>
+
+            <h3>Tipos de Fricción y sus Características:</h3>
+            <h4>Fricción Estática:</h4>
+            <p>Es la resistencia que se opone al inicio del movimiento entre dos superficies en contacto. Esta fuerza debe superarse para que el objeto comience a moverse. La fricción estática aumenta con la rugosidad de las superficies y se mantiene hasta cierto límite antes de dar paso al movimiento.</p>
+            <img src="friccionEstatica.png" alt="Trabajo de Rozamiento" width="400" height="180">
+            <h4>Fricción Dinámica o Cinética:</h4>
+            <p>Actúa cuando ya existe movimiento relativo entre las superficies en contacto. Es generalmente menor que la fricción estática y depende de factores como la velocidad y el tipo de materiales. Este tipo de fricción se sigue oponiendo al movimiento, pero con menor intensidad que la fricción estática.</p>
+            <img src="friccionDinamica.jpeg" alt="Trabajo de Rozamiento" width="400" height="180">
+            <h3>Fricción en Deslizamiento </h3>
+            <p>La fricción en deslizamiento es un fenómeno complejo que depende de varios factores:</p>
+            <ul>
+                <li>Rugosidad de las superficies</li>
+                <li>Temperatura de contacto</li>
+                <li>Velocidad relativa</li>
+                <li>Presión de contacto</li>
+                <li>Condiciones ambientales</li>
+            </ul>
+
+            <h3>Fórmulas  para Fricción en Deslizamiento:</h3>
+            <ul>
+                <li>Fuerza de fricción básica:</li>
+                <img src="formulaFriccion.png" alt="Fórmula de Fricción" width="310" height="200">
+
+                <li>Trabajo realizado por la fricción: W = f × d</li>
+                <li>Potencia disipada por fricción: P = f × v</li>
+                <li>Coeficiente de fricción dependiente de la velocidad: μ(v) = μₖ + (μₛ - μₖ)e^(-cv)</li>
+                <li>Pérdida de energía por fricción: E = f × d = μmgd</li>
+            </ul>
+
+            <h3>Ecuaciones de Movimiento con Fricción:</h3>
+            <ul>
+                <li>Aceleración en plano horizontal: a = (F - μₖN)/m</li>
+                <li>Distancia de frenado: d = v²/(2μₖg)</li>
+                <li>Velocidad terminal en plano inclinado: v_t = √((mg sin θ)/(k))</li>
+                <li>Tiempo de detención: t = v₀/(μₖg)</li>
+            </ul>
+
+            <h3>Aplicaciones Prácticas:</h3>
+            <p>Diseño de Frenos y Embragues: La fricción es esencial en frenos de automóviles y sistemas de embrague, donde se requiere controlar la velocidad o detener el movimiento mediante superficies en contacto.</p>
+
+            <h4>Factores que Afectan el Deslizamiento:</h4>
+            <ul>
+                <li>Lubricación y sus efectos en el coeficiente de fricción</li>
+                <li>Desgaste de superficies durante el deslizamiento prolongado</li>
+                <li>Efectos térmicos en el contacto entre superficies</li>
+                <li>Influencia de la carga normal en el comportamiento friccional</li>
+            </ul>
+
+            <h3>Fórmulas importantes:</h3>
+            <ul>
+                <li>Fuerza Normal (N) = masa × gravedad</li>
+                <li>Fuerza de Fricción (f) = μ × N</li>
+                <li>Fuerza Neta = Fuerza aplicada - Fuerza de fricción</li>
+
+            </ul>
+
+        </div>
+
+        <section class="manual-usuario">
+            <h3>¿Cómo funciona el simulador?</h3>
+            <p>Este simulador permite calcular diferentes resultados basados en la interacción de materiales, voltaje, distancia y peso de bloques. A continuación, te explicamos cómo usar cada sección del simulador.</p>
+            <ul>
+                <li><strong>Material:</strong> Selecciona el material con el que estás trabajando. Puedes elegir entre Plástico, Corcho o Paño. Cada material tiene diferentes propiedades que afectarán los resultados.</li>
+                <li><strong>Voltaje (V):</strong> Ingresa el valor del voltaje en voltios (V) que se está utilizando en el sistema.</li>
+                <li><strong>Distancia (cm):</strong> Introduce la distancia en centímetros.</li>
+                <li><strong>Peso del Bloque B (g):</strong> Ingresa el peso del bloque B en gramos.</li>
+            </ul>
+        
+            <h4>Acciones adicionales:</h4>
+            <ul>
+                <li><strong>Calcular:</strong> Una vez que hayas completado todos los campos, haz clic en este botón para calcular los resultados.</li>
+                <li><strong>Iniciar Simulación:</strong> Haz clic en este botón para visualizar la simulación interactiva basada en los datos que has ingresado.</li>
+                <li><strong>Resetear:</strong> Si deseas empezar de nuevo, haz clic en este botón para borrar todos los datos y restablecer el simulador.</li>
+            </ul>
+        
+            <h4>Resultados:</h4>
+            <p>Los resultados se mostrarán en la sección de resultados, tanto de forma visual (simulación) como numérica.</p>
+        </section>
+    
+        <div class="simulador">
+            <div class="input-section">
+                <h2>Actividades</h2>
+                <div class="form-group">
+                    <label for="material">Material:</label>
+                    <select id="material">
+                        <option value="plastico">Plástico</option>
+                        <option value="corcho">Corcho</option>
+                        <option value="paño">Paño</option>
+                    </select>
+                    <div id="material-error" class="error-message"></div>
+
+                    <label for="voltaje">Voltaje (V):</label>
+                    <input type="number" id="voltaje" min="0" step="any" placeholder="Ejemplo: 1.5">
+                    <div id="voltaje-error" class="error-message"></div>
+
+                    <label for="distancia">Distancia (cm):</label>
+                    <input type="number" id="distancia" min="0" step="any" placeholder="Ejemplo: 25.5">
+                    <div id="distancia-error" class="error-message"></div>
+
+                    <label for="peso">Peso del bloque B (g):</label>
+                    <input type="number" id="peso" min="0" step="any" placeholder="Ejemplo: 500.5">
+                    <div id="peso-error" class="error-message"></div>
+
+                    <button onclick="calcular()">Calcular</button>
+                    
+                    <div class="controles-animacion">
+                        <button onclick="iniciarAnimacion()" id="btnIniciar">Iniciar Simulación</button>
+                        <button onclick="resetearAnimacion()" id="btnReset">Resetear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h2>Resultados</h2>
+                <div class="canvas-container">
+                    <canvas id="simulacion"></canvas>
+                    <div id="superficie"></div>
+                </div>
+                <div class="resultado" id="resultado">
+                    <p>Los resultados se mostrarán aquí...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="simulador.js"></script>
+</body>
+</html>

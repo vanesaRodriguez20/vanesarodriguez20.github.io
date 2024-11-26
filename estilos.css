@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #2c3e50;  /* Azul oscuro */
+    --secondary-color: #1f3a5b; /* Azul rey más profundo */
+    --accent-color: #3e7ab7; /* Azul intermedio */
+    --bg-color: #f4f7fc; /* Fondo gris claro */
+    --card-bg: #ffffff; /* Fondo blanco para tarjetas */
+    --error-color: #e74c3c; /* Rojo para mensajes de error */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+    margin: 100px;  /* Márgenes alrededor del cuerpo */  
+    padding: 0;  
+    background-color: var(--bg-color);  
+    color: var(--primary-color);  
+}  
+
+.container {  
+    max-width: 1100px;  
+    margin: 100px auto; 
+}  
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.teoria {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    position: relative;
+}
+
+.teoria h2 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.simulador {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-section, .output-section {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1f3a5b; /* Azul más brillante en hover */
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.canvas-container {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ffondo-superficie&psig=AOvVaw2seAanNPnpEDL7_VHVSkJK&ust=1732332673217000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi8wqKA74kDFQAAAAAdAAAAABAE') center center/cover;
+    border-radius: 5px;
+}
+
+#superficie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #95a5a6; 
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: background-color 0.3s ease;
+}
+
+.resultado:hover {
+    background-color: #1f3a5b; 
+    color: white;
+}
+
+.manual-usuario {
+    background-color: #ffffff; 
+    border: 1px solid #ddd;    
+    border-radius: 8px;        
+    padding: 20px;             
+    margin: 20px 0;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.manual-usuario h3 {
+    margin-top: 0; 
+    color: #333;   
+}
+
+.manual-usuario ul {
+    list-style-type: disc;  
+    padding-left: 20px;    
+}
+
+.manual-usuario p {
+    margin-bottom: 15px;    
+    color: #666;            
+}
+.controles-animacion {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.controles-animacion button {
+    flex: 1; 
+    padding: 12px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: var(--accent-color); 
+    color: white; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    text-align: center; 
+    margin: 0;
+}
+
+.controles-animacion button:hover {
+    background-color: #1f3a5b; 
+    transform: scale(1.05); 
+}
+
+.controles-animacion button:disabled {
+    background-color: #bdc3c7; 
+    cursor: not-allowed; 
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Center the container itself */
+}
+
+img {
+    max-width: 400px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0; 
+}
